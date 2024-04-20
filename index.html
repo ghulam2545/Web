@@ -1,173 +1,267 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Project Work</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap');
-
-        body {
-            font-family: 'Noto Serif', serif;
-            margin: 0;
-            padding: 0px 40px 5px 40px;
-            background-color: #f2f2f2;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-
-        .project-card {
-            background-color: #ffffff;
-            border-radius: 5px;
-            padding: 20px 30px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-card h3 {
-            margin-top: 0;
-        }
-
-        .project-card p {
-            margin-bottom: 10px;
-            color: black;
-        }
-
-        .project-card ul {
-            margin-top: 0;
-            margin-bottom: 10px;
-            padding-left: 20px;
-        }
-
-        .project-card a.button {
-            margin-left: auto;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #4caf50;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .footer {
-            margin-top: 20px;
-            background-color: #333333;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer p {
-            margin: 0;
-        }
-
-        @media only screen and (max-width: 700px) {
-            .projects-container {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
+<link rel="stylesheet" href="style.css">
 
 <body>
-    <h2>My Undergraduate Projects and Experiments (2019-2023)</h2>
-    <hr>
-
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>Medical Images Analysis using Deep Learning</h3>
-            <p>This is the final year project I worked on. It involved creating a pneumonia detection using CNN.
-            </p>
-            <ul>
-                <li>Implemented CNN-based pneumonia detection system.</li>
-                <li>Developed interactive user interface.</li>
-                <li>Diagnose medical images easily.</li>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#"><span>GHULAM M.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn"><strong>Home</strong></a></li>
+                <li><a href="#about" class="menu-btn"><strong>About</strong></a></li>
+                <li><a href="#skills" class="menu-btn"><strong>Skills</strong></a></li>
+                <li><a href="#projects" class="menu-btn"><strong>Projects</strong></a></li>
+                <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
             </ul>
-            <p>Technology: Tensorflow, Keras, Python, Gradio</p><br>
-            <a href="https://github.com/ghulam2545/deep_learning" class="button">View Project</a>
         </div>
+    </nav>
 
-        <div class="project-card">
-            <h3>Flappy Bird Game</h3>
-            <p>In this project, I cloned flappy bird game, primary focused on cognitive skill of player.</p>
-            <ul>
-                <li>Developed flappy bird game clone in C++.</li>
-                <li>Implemented bird, pipe, sound effect and scoring system.</li>
-                <li>Have some fun by playing in your spare time.</li>
-            </ul>
-            <p>Technology: SFML, CMake, C++, STL</p><br>
-            <a href="https://github.com/ghulam2545/flappy-bird" class="button">View Project</a>
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, there! I'm</div>
+                <div class="text-2">Ghulam Mustafa</div>
+                <div class="text-3">And I work as a <span><strong>Software Engineer.</strong></span></div>
+                <a href="https://drive.google.com/file/d/1xhVwO0Bude4AQYoN5XkX3STB8IiC3B6Y/view?usp=drive_link"
+                    target="_blank">Hire me</a>
+                <div class=".links">
+                    <a href="https://leetcode.com/Hey_000/"><img src="assets/leetcode.png" alt=""></a>
+                    <a href="https://www.codechef.com/users/ghulam123"><img src="assets/codechef.png" alt=""></a>
+                    <a href="https://github.com/ghulam2545"><img src="assets/github.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/ghulam2545"><img src="assets/linkedin.png" alt=""></a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>Attendance Automation System <sub style="font-weight: lighter;"><i>&nbsp; incomplete</i></sub> </h3>
-            <p>
-                This was our first acedemic project to automate manual attendance managing system in systamatic way.</p>
-            <ul>
-                <li>Developed a website for our department to automate attendance.</li>
-                <li>Reduce time consumption, increase accuracy for attendance.</li>
-                <li>Included time table for the reference of the classes.</li>
-            </ul>
-            <p>Technology: JavaScript, NodeJs, MongoDB</p><br>
-            <a href="https://github.com/ghulam2545/AAS" class="button">View Project</a>
+    <!--  About  -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="assets/ghulam_pic.jpg" alt="Profile Image 626x626">
+                </div>
+                <div class="column right">
+                    <div class="text">Ghulam M. here<span class="typing-2"></span></div>
+                    <p>Driven and eager to learn, seeking an entry-level position at a respected organization.
+                        My adaptable skillset and passion for growth make me a valuable asset. I thrive in fast-paced
+                        environments and excel at mastering new technologies.</p>
+                    <br>
+                    <div class="text">Why Work With Me</div>
+                    <p>My strength lies in clear and concise communication, ensuring everyone is on the same page. As a
+                        natural problem-solver, I relish tackling complex challenges and devising innovative solutions
+                        that exceed customer expectations. I take pride in actively listening and thoroughly
+                        understanding customer needs to deliver exceptional results.</p>
+
+                    <a href="https://drive.google.com/file/d/1xhVwO0Bude4AQYoN5XkX3STB8IiC3B6Y/view?usp=drive_link"
+                        target="_blank">Download CV</a>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>Numeral Converter</h3>
-            <p>For this project, I developed a desktop application using QT framework. It allow to interchage numbers in
-                multiple bases.</p>
-            <ul>
-                <li>Desgin and developed a number conversion system.</li>
-                <li>Exchange numbers in decimal, binary, octal and hexadecimal.</li>
-                <li>Sorry, only limited to integer values.</li>
-            </ul>
-            <p>Technology: QT, C++, STL</p><br>
-            <a href="https://github.com/ghulam2545/Numeral_Converter" class="button">View Project</a>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <br>
+                    <div class="text">PROJECTS</div>
+
+                    <p>
+                        <li class="project">Blgo Application - Java, Spring Boot, Angular</li>
+                        <li class="project">MicroChat - Spring Boot, REST, MySQL, git</li>
+                        <li class="project">Medical Image Analysis - Tensorflow, Keras, Gradio</li>
+                        <li class="project">Flappy Bird Game - C++, SFML, CMake, STL</li>
+                        <li class="project">My Notepad - Java, Java Swing, UI</li>
+                        <li class="project">Lorem ipsum - Lorem ipsum dolor sit amet</li>
+                    </p>
+
+                    <br>
+                    <a href="https://github.com/ghulam2545" target="blank">Check on Github</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>Java, C++, Javascript</span>
+                        </div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Springframework, Spring Boot</span>
+                        </div>
+                        <div class="line spring"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Git, Linux OS</span>
+                        </div>
+                        <div class="line git"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL database</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Problem Solving, Algorithms</span>
+                        </div>
+                        <div class="line bootstraps"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>English Communication, Team Player</span>
+                        </div>
+                        <div class="line english"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>Book CRUD application</h3>
-            <p>It is a very simple and user-friendly web project aimed to efficiently managing and organizing books.</p>
-            <ul>
-                <li>Perform all CRUD operations for managing books.</li>
-                <li>User friendly interface allow ease of access.</li>
-                <li>Maintain records of all your book at once.</li>
-            </ul>
-            <p>Technology: Jakarta JEE, JSP, Servlet, MySQL</p><br>
-            <a href="https://github.com/ghulam2545/JavaTry/tree/main/Crud_App" class="button">View Project</a>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="https://source.unsplash.com/720x600/?blog" alt="">
+                        <div class="text"><a href="#">Blog Application</a></div>
+                        <p>
+                        <ul>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="https://source.unsplash.com/720x600/?education" alt="">
+                        <div class="text"><a href="https://github.com/ghulam2545/MicroChat">MicroChat</a></div>
+                        <p>
+                        <ul>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="https://source.unsplash.com/720x600/?health" alt="">
+                        <div class="text"><a href="https://github.com/ghulam2545/medical_image_analysis">Medical Image Analysis</a></div>
+                        <p>
+                        <ul>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <img src="https://source.unsplash.com/720x600/?game" alt="">
+                        <div class="text"><a href="https://github.com/ghulam2545/flappy-bird">Flappy Bird Game</a>
+                        </div>
+                        <p>
+                        <ul>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                            <li>These bullet points will be updated for the project by [date].</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <br>
+    </section>
 
-        <!-- Experiments -->
-        <div class="project-card">
-            <h3>Large Number System</h3>
-            <p>At most a computing machine can perform arithmetic operations on 64-bit number, to cross the boundry
-                this was an experiment that allow those operations on hundred digits of numbers.</p>
-            <p>Technology: C++</p><br>
-            <a href="https://github.com/ghulam2545/Misc/tree/master/Large_Num" class="button">View Experiment</a>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
+                        opportunities to be a part of your visions. Email me with any questions or inquiries. I'll happy
+                        to answer your questions and set up a meeting with you.</p>
+                    <div class="icons">
+
+                        <div class="row">
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title"><a style="text-decoration: none; color: #333;">Ghulam
+                                        Mustafa</a></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info">
+                                <div class="head">Present Address</div>
+                                <div class="sub-title">Gachibowli, Telecom Nagar, Hyderabad, IND</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:#" style="text-decoration: none; color: #333;">
+                                        ghulam2545@gmail.com</a></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="bi bi-translate"></i>
+                            <div class="info">
+                                <div class="head">Language Known</div>
+                                <div class="sub-title">Hindi, English, Urdu</div>
+                            </div>
+                        </div>
+
+                        <br>
+                    </div>
+                </div>
+
+                <!-- Reach -->
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>ghulam::vector&#60;T&#62;</h3>
-            <p>This was a try for replacement of std::vector&#60;T&#62;, It includes storage, traversal and many
-                manuplating functions borrowed from std::vector&#60;T&#62;.</p>
-            <p>Technology: C++</p><br>
-            <a href="https://github.com/ghulam2545/Misc/tree/master/Container" class="button">View Experiment</a>
-        </div>
-        <!-- Add more project cards here -->
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2023 My Project Work. All rights reserved.</p>
-    </footer>
 </body>
-
-</html>

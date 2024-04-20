@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Work</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Noto Serif', serif;
+            margin: 0;
+            padding: 0px 40px 5px 40px;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            padding: 20px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-card p {
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .project-card ul {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .project-card a.button {
+            margin-left: auto;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Undergraduate Projects and Experiments (2019-2023)</h2>
+    <hr>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Medical Images Analysis using Deep Learning</h3>
+            <p>This is the final year project I worked on. It involved creating a pneumonia detection using CNN.
+            </p>
+            <ul>
+                <li>Implemented CNN-based pneumonia detection system.</li>
+                <li>Developed interactive user interface.</li>
+                <li>Diagnose medical images easily.</li>
+            </ul>
+            <p>Technology: Tensorflow, Keras, Python, Gradio</p><br>
+            <a href="https://github.com/ghulam2545/deep_learning" class="button">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Flappy Bird Game</h3>
+            <p>In this project, I cloned flappy bird game, primary focused on cognitive skill of player.</p>
+            <ul>
+                <li>Developed flappy bird game clone in C++.</li>
+                <li>Implemented bird, pipe, sound effect and scoring system.</li>
+                <li>Have some fun by playing in your spare time.</li>
+            </ul>
+            <p>Technology: SFML, CMake, C++, STL</p><br>
+            <a href="https://github.com/ghulam2545/flappy-bird" class="button">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Attendance Automation System <sub style="font-weight: lighter;"><i>&nbsp; incomplete</i></sub> </h3>
+            <p>
+                This was our first acedemic project to automate manual attendance managing system in systamatic way.</p>
+            <ul>
+                <li>Developed a website for our department to automate attendance.</li>
+                <li>Reduce time consumption, increase accuracy for attendance.</li>
+                <li>Included time table for the reference of the classes.</li>
+            </ul>
+            <p>Technology: JavaScript, NodeJs, MongoDB</p><br>
+            <a href="https://github.com/ghulam2545/AAS" class="button">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Numeral Converter</h3>
+            <p>For this project, I developed a desktop application using QT framework. It allow to interchage numbers in
+                multiple bases.</p>
+            <ul>
+                <li>Desgin and developed a number conversion system.</li>
+                <li>Exchange numbers in decimal, binary, octal and hexadecimal.</li>
+                <li>Sorry, only limited to integer values.</li>
+            </ul>
+            <p>Technology: QT, C++, STL</p><br>
+            <a href="https://github.com/ghulam2545/Numeral_Converter" class="button">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Book CRUD application</h3>
+            <p>It is a very simple and user-friendly web project aimed to efficiently managing and organizing books.</p>
+            <ul>
+                <li>Perform all CRUD operations for managing books.</li>
+                <li>User friendly interface allow ease of access.</li>
+                <li>Maintain records of all your book at once.</li>
+            </ul>
+            <p>Technology: Jakarta JEE, JSP, Servlet, MySQL</p><br>
+            <a href="https://github.com/ghulam2545/JavaTry/tree/main/Crud_App" class="button">View Project</a>
+        </div>
+        <br>
+
+        <!-- Experiments -->
+        <div class="project-card">
+            <h3>Large Number System</h3>
+            <p>At most a computing machine can perform arithmetic operations on 64-bit number, to cross the boundry
+                this was an experiment that allow those operations on hundred digits of numbers.</p>
+            <p>Technology: C++</p><br>
+            <a href="https://github.com/ghulam2545/Misc/tree/master/Large_Num" class="button">View Experiment</a>
+        </div>
+
+        <div class="project-card">
+            <h3>ghulam::vector&#60;T&#62;</h3>
+            <p>This was a try for replacement of std::vector&#60;T&#62;, It includes storage, traversal and many
+                manuplating functions borrowed from std::vector&#60;T&#62;.</p>
+            <p>Technology: C++</p><br>
+            <a href="https://github.com/ghulam2545/Misc/tree/master/Container" class="button">View Experiment</a>
+        </div>
+        <!-- Add more project cards here -->
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 My Project Work. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
